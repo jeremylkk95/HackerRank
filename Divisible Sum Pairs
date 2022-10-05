@@ -1,0 +1,12 @@
+def divisibleSumPairs(n, k, ar):
+    # Write your code here
+    current_sum = count=0
+    for i in range(len(ar)):
+        for j in range(len(ar)):
+            if i<j:
+                current_sum=ar[i]+ar[j]
+                if current_sum%k==0:
+                    count +=1
+                else:
+                    pass
+    return count   
