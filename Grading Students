@@ -1,0 +1,11 @@
+def gradingStudents(grades):
+    # Write your code here
+    updated_grade=[]
+    for i in range(len(grades)):
+        if (grades[i]%5==3 and grades[i]>=38):
+            updated_grade.append(grades[i]+2)
+        elif (grades[i]%5==4 and grades[i]>=38):
+            updated_grade.append(grades[i]+1)
+        else:
+            updated_grade.append(grades[i])
+    return updated_grade
