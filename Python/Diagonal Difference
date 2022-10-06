@@ -5,6 +5,7 @@ def diagonalDifference(arr):
         for j in range(len(arr)):
             if (i==j):
                 l_dia_sum +=arr[i][j]
+            #n == size of the matrix -> 3x3 means n ==3 -> i==0,1,2
             if (j==n-i-1):
                 r_dia_sum+=arr[i][j]
     return (abs(l_dia_sum-r_dia_sum))
