@@ -1,0 +1,16 @@
+def countingValleys(steps, path):
+    # Write your code here
+    altitude =number_valley= 0
+    for i in range(len(path)):
+        if path[i]=='U':
+            altitude +=1
+            steps -=1
+        elif path[i]=='D':
+            altitude -=1
+            if (altitude == -1):
+                number_valley+=1
+            steps-=1
+        else:
+            pass
+    return number_valley
+            
