@@ -1,0 +1,8 @@
+def countingSort(arr):
+    # Write your code here
+    #Create an empty array of 0 with size of 100
+    count_arr=[0] * 100
+    for num in arr:
+        will increase the empty by 1 whenever the arr[num] exists
+        count_arr[num]+=1
+    return count_arr
